@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+
+
+
+    <string-array name="day_array">
+        <item> <font color="#F2F5A9">Pazartesi </font></item>
+        <item><font color="#F2F5A9"> Salı </font></item>
+        <item> <font color="#F2F5A9">Çarşamba </font></item>
+        <item> <font color="#F2F5A9">Perşembe </font></item>
+        <item> <font color="#F2F5A9">Cuma </font></item>
+        <item> <font color="#F2F5A9">Cumartesi </font></item>
+        <item> <font color="#F2F5A9">Pazar </font></item>
+
+
+    </string-array>
+
+
+</resources>

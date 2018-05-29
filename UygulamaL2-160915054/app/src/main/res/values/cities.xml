@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="city_prompt">Bir il şeçiniz</string>
+
+    <string-array name="city_array">
+        <item>Ankara</item>
+        <item>İstanbul</item>
+        <item>Kocaeli</item>
+    </string-array>
+
+
+</resources>

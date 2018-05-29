@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+    <string-array name="lesson_array">
+        <item> <font color="#F2F5A9">Matematik </font></item>
+        <item> <font color="#F2F5A9">Türkçe </font></item>
+
+    </string-array>
+
+
+</resources>

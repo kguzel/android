@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgggg"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dip"
+                android:gravity="center_horizontal"
+                android:text="Kayıt ol"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/nameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Kullanıcı Adı Giriniz"
+                    android:inputType="text"
+                    android:fontFamily="sans-serif"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/grey" />
+
+                <EditText
+                    android:id="@+id/passEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColorHint="@color/white"
+                    android:hint="Şifre Giriniz"
+                    android:fontFamily="sans-serif"
+                    android:inputType="textPassword"
+                    android:textColor="@color/grey" />
+
+                <EditText
+                    android:id="@+id/passAgainEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:textColorHint="@color/white"
+                    android:hint="Şifreyi Tekrar Giriniz"
+                    android:inputType="textPassword"
+                    android:textColor="@color/grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/questionSelectedTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gizli Soru Seçiniz: "
+                        android:fontFamily="sans-serif"
+                        android:textSize="20sp"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/grey"
+                       />
+
+                    <Spinner
+                        android:id="@+id/questionspinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/white"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:entries="@array/question_array"
+                        android:popupBackground="@color/black"
+                        />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/answerEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:textColorHint="@color/white"
+                    android:hint="Gizli Soru Cevabını Giriniz"
+                    android:inputType="textPassword"
+                    android:textColor="@color/grey" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/entryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/register_corner_button"
+
+            android:text="KAYDET" />
+    </LinearLayout>
+
+</ScrollView>

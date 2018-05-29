@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+    <string-array name="question_array">
+        <item> <font color="#F2F5A9">Anne Kızlık Soyadı? </font></item>
+        <item> <font color="#F2F5A9">İlkokul Öğretmeninizin Adı? </font></item>
+        <item><font color="#F2F5A9"> En Sevdiğiniz Renk?</font> </item>
+
+
+    </string-array>
+
+
+</resources>

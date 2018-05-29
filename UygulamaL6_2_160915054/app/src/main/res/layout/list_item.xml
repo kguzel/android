@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+>
+
+    <!-- ID -->
+
+
+    <!-- NAME -->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="isim"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <!-- symbol -->
+    <TextView
+        android:id="@+id/symbol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/symbol"
+        android:text="symbol" />
+
+    <!-- rank -->
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="rank"
+        />
+
+    <!-- price_usd -->
+    <TextView
+        android:id="@+id/price_usd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="price_usd"
+        />
+
+    <!-- price_btc -->
+    <TextView
+        android:id="@+id/price_btc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="price_btc"
+        />
+
+    <!-- 24h_volume_usd -->
+    <TextView
+        android:id="@+id/vol_usd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="vol_usd"
+        />
+
+    <!-- market_cap_usd -->
+    <TextView
+        android:id="@+id/market_cap_usd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="market_cap_usd"
+        />
+
+    <!-- available_supply -->
+    <TextView
+        android:id="@+id/available_supply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="available_supply"
+        />
+
+
+
+    <!-- total_supply -->
+    <TextView
+        android:id="@+id/total_supply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="total_supply"
+        />
+
+
+
+
+    <!-- max_supply -->
+    <TextView
+        android:id="@+id/max_supply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="max_supply"
+        />
+
+
+
+    <!-- percent_change_1h -->
+    <TextView
+        android:id="@+id/percent_change_1h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="percent_change_1h"
+        />
+
+    <!-- percent_change_24h -->
+    <TextView
+        android:id="@+id/percent_change_24h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="percent_change_24h"
+        />
+
+
+
+    <!-- percent_change_7d -->
+    <TextView
+        android:id="@+id/percent_change_7d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="percent_change_7d"
+        />
+
+
+
+
+    <!-- last_updated -->
+    <TextView
+        android:id="@+id/last_updated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="last_updated"
+        />
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgggg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dip"
+                android:gravity="center_horizontal"
+                android:text="Ders Ekleme"
+                android:textColor="@color/grey"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lessonTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginLeft="10dp"
+                    android:text="Dersin Adını Giriniz: "
+                    android:textColor="@color/blue"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/lessonEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:hint=""
+                    android:inputType="text"
+                    android:textColor="@color/grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/permissionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dip"
+                    android:text="Devamsızlık Yüzdesi: "
+                    android:textColor="@color/grey"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/permissionEditText"
+                    android:layout_width="match_parent"
+                    android:layout_margin="15dip"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+
+                    />
+            </LinearLayout>
+
+
+        <Button
+            android:id="@+id/entryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dip"
+            android:background="@drawable/result_corner_button"
+            android:text="KAYDET"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

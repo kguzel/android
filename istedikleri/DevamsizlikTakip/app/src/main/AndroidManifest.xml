@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mihribanguzel.devamsizliktakip">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="stateHidden">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CreateActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".EditFollowActivity" />
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".ForgottenActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".LessonsFollowListActivity"
+            android:label="DÜZENLE" />
+        <activity android:name=".AddLessonActivity" />
+        <activity android:name=".EditLessonsListActivity" />
+        <activity android:name=".EditLessonActivity" />
+
+        <receiver android:name=".AlarmManager" />
+        <receiver android:name=".AlarmManager$switchButtonListener" />
+        <receiver android:name=".AlarmManager$switchButtonListener2" />
+
+        <activity android:name=".AddActivity"></activity>
+    </application>
+
+</manifest>

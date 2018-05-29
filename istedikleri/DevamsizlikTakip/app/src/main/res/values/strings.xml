@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Devamsızlık Takip Programı</string>
+    <string name="title_activity_lessons_follow_list">LessonsFollowListActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

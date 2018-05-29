@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dip"
+                android:gravity="center_horizontal"
+                android:text="Pizza Siparişi"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/pizzaCountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:text="Pizza Sayısı: "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:entries="@array/count_array"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/rgOptionType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/smallRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="Küçük"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/mediumRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1.0"
+                    android:text="Orta"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/bigRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1.0"
+                    android:text="Büyük"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dip"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+
+                    <CheckBox
+                        android:id="@+id/sucukCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dip"
+                        android:layout_weight="1.0"
+                        android:text="Sucuk">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/mantarCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dip"
+                        android:layout_weight="1.0"
+                        android:text="Mantar">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/salamCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dip"
+                        android:layout_weight="1.0"
+                        android:text="Salam">
+
+                    </CheckBox>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+
+                    <CheckBox
+                        android:id="@+id/sosisCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dip"
+                        android:layout_weight="1.0"
+                        android:text="Sosis">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/zeytinCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dip"
+                        android:layout_weight="1.1"
+                        android:text="Zeytin">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/karidesCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dip"
+                        android:layout_weight="0.7"
+                        android:text="Karides">
+
+                    </CheckBox>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+
+                    <CheckBox
+                        android:id="@+id/kavurmaCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dip"
+                        android:layout_weight="0.4"
+                        android:text="Kavurma">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/kasarCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dip"
+                        android:layout_weight="0.8"
+                        android:text="Kaşar">
+
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/misirCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dip"
+                        android:layout_weight="0.7"
+                        android:text="Mısır">
+
+                    </CheckBox>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/doughOptionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:text="Hamur Seçimi: "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+
+                <ToggleButton
+                    android:id="@+id/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:textOff="İnce Hamur"
+                    android:textOn="Kalın Hamur" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/biberliImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:drawableLeft="@drawable/biberli_pizza"
+                android:text="Biberli Pizza" />
+
+            <Button
+                android:id="@+id/mantarliImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:drawableLeft="@drawable/mantarli_pizza"
+                android:text="Mantarli Pizza" />
+
+
+            <Button
+                android:id="@+id/sebzelimageButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:drawableLeft="@drawable/sebzeli_pizza"
+                android:text="Sebzeli Pizza" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/getOrderButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@color/green"
+            android:text="SİPARİŞ VER" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+    <string-array name="faculty_array">
+        <item> Eğitim Fakültesi </item>
+        <item> Mühendislik Fakültesi </item>
+
+    </string-array>
+
+
+</resources>
